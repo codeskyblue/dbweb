@@ -1,0 +1,19 @@
+author: lunny
+description: >
+        A web based database admin tool written by Golang support mysql/postgres/sqlite
+filesets:
+    includes:
+        - README.md
+        - LICENSE
+        - templates
+        - static
+        - langs
+    excludes:
+        - \.git
+    depth: 5
+settings:
+        targetdir: ""
+        build: |
+            go install -v
+        outfiles:
+            - dbweb
